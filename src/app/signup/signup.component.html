@@ -1,0 +1,9 @@
+<div class="flex justify-center min-h-screen items-center">
+    <form [formGroup]="forms" (ngSubmit)="handleSubmit()" action="" class="flex flex-col w-[400px] gap-4 rounded-md shadow-md p-4 bg-rose-300">
+        <input formControlName="name" type="text" placeholder="Name" class="h-10 p-2 rounded-md outline-none focus:ring-4 transition-all text-violet-600">
+        <input formControlName="email" type="email" placeholder="Email" class="h-10 p-2 rounded-md outline-none focus:ring-4 transition-all text-violet-600">
+        <input formControlName="password" type="password" placeholder="Password" class="h-10 p-2 rounded-md outline-none focus:ring-4 transition-all text-violet-600">
+        <input formControlName="confirmPassword" type="password" placeholder="Confirm Password" class="h-10 p-2 rounded-md outline-none focus:ring-4 transition-all text-violet-600">
+        <button class="font-semibold py-1 bg-slate-400 self-center px-2 rounded-md shadow-md active:ring-2">Submit</button>
+    </form>
+</div>
